@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <p id="page">Result </p></h1>
+   
+    <div class="container">
+        <input id="first" type="text" placeholder="enter"><br><br>
+        <input id="second" type="text" placeholder="enter"><br><br>
+
+      
+        <div class="value">
+            <button id="one" onclick="add()">+</button>&nbsp       &nbsp<button onclick="min()">-</button>&nbsp       &nbsp<button onclick="mal()">*</button>
+            &nbsp       &nbsp<button onclick="div()">/</button>
+        </div>
+    </div>
+    <script>
+        function add(){
+            var first1=parseFloat( document.getElementById("first").value);
+            var second1= parseFloat( document.getElementById("second").value);
+/*             document.getElementById(page).value;
+ */            var add =first1 + second1;
+                 document.getElementById("page").textContent = add
+        }  
+
+        function min(){
+            var first1=parseFloat( document.getElementById("first").value);
+            var second1= parseFloat( document.getElementById("second").value);
+/*             document.getElementById(page).value;
+ */            var add =first1-second1;
+                 document.getElementById("page").textContent = add
+        }
+        function mal(){
+            var first1=parseFloat( document.getElementById("first").value);
+            var second1= parseFloat( document.getElementById("second").value);
+/*             document.getElementById(page).value;
+ */            var add =first1*second1;
+                 document.getElementById("page").textContent = add
+        }
+        function div(){
+            var first1=parseFloat( document.getElementById("first").value);
+            var second1= parseFloat( document.getElementById("second").value);
+/*             document.getElementById(page).value;
+ */            var add =first1/second1;
+                 document.getElementById("page").textContent = add
+        }  
+    </script>
+</body>
+</html>
